@@ -1,8 +1,9 @@
 import { createComponentRenderer } from '@/__tests__/render';
-import DataStoreCard from './DataStoreCard.vue';
+import DataStoreCard from '@/features/dataStore/components/DataStoreCard.vue';
 import { createPinia, setActivePinia } from 'pinia';
 import type { DataStoreResource } from '@/features/dataStore/types';
-import type { UserAction, IUser } from '@/Interface';
+import type { UserAction } from '@/Interface';
+import type { IUser } from '@n8n/rest-api-client/api/users';
 
 vi.mock('vue-router', () => {
 	const push = vi.fn();
